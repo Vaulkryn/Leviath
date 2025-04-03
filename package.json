@@ -1,0 +1,16 @@
+{
+  "name": "discord-bot-leviath",
+  "main": "index.js",
+  "scripts": {
+    "initLeviath": "node src/index.js",
+    "commands": "node src/deploy-commands.js",
+    "start": "npm run commands && npm run initLeviath"
+  },
+  "author": "Vaulkryn",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}

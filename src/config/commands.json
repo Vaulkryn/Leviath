@@ -1,0 +1,83 @@
+{
+    "LEVIATHAN": [
+        {
+            "name": "slash",
+            "description": "Ceci est un guide des commandes Slash.",
+            "options": [
+                {
+                    "type": 2,
+                    "name": "subgroup",
+                    "description": "Un groupe de sous-commandes.",
+                    "options": [
+                        {
+                            "type": 1,
+                            "name": "subcommand1",
+                            "description": "Première sous-commande.",
+                            "options": [
+                                {
+                                    "type": 3,
+                                    "name": "string",
+                                    "description": "Une chaîne de caractères."
+                                },
+                                {
+                                    "type": 4,
+                                    "name": "integer",
+                                    "description": "Un entier. (32 bits)"
+                                }
+                            ]
+                        },
+                        {
+                            "type": 1,
+                            "name": "subcommand2",
+                            "description": "Deuxième sous-commande.",
+                            "options": [
+                                {
+                                    "type": 5,
+                                    "name": "boolean",
+                                    "description": "Un booléen. (vrai ou faux)"
+                                },
+                                {
+                                    "type": 6,
+                                    "name": "user",
+                                    "description": "Un utilisateur Discord."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": 1,
+                    "name": "standalone_subcommand",
+                    "description": "Une sous-commande indépendante.",
+                    "options": [
+                        {
+                            "type": 7,
+                            "name": "channel",
+                            "description": "Un salon Discord. (texte, vocal, etc.)"
+                        },
+                        {
+                            "type": 8,
+                            "name": "role",
+                            "description": "Un rôle Discord."
+                        },
+                        {
+                            "type": 9,
+                            "name": "mentionable",
+                            "description": "Un utilisateur ou un rôle mentionnable."
+                        },
+                        {
+                            "type": 10,
+                            "name": "number",
+                            "description": "Un nombre. (double précision)"
+                        },
+                        {
+                            "type": 11,
+                            "name": "attachment",
+                            "description": "Une pièce jointe. (fichier téléversé)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
