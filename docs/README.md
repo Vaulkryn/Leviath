@@ -50,9 +50,10 @@ __Fonctions présentes:__
 | Version  | Objectif                                                      | État |
 |:--------:|:--------------------------------------------------------------|:----:|
 | v1.0.0   | Initial Commit                                                | ✅ |
-| v1.1.0   | Système d'ajout de flux RSS                                   | 🛠️ |
-| v1.2.0   | Système de logs des membres: arrivée, listing selon rôles,..  | 📝 |
-| v1.3.0   | Intégrer l'API d'un LLM de MistralAI                          | _ |
+| v1.1.0   | Affectation auto du rôle "Membre"                             | ✅ |
+| v1.2.0   | Commande d'ajout de flux RSS                                  | 🛠️ |
+| v1.3.0   | Système de logs des membres: arrivée, listing selon rôles,..  | 📝 |
+| v1.4.0   | Intégrer l'API d'un LLM de MistralAI                          | _ |
 
 
 ## License
