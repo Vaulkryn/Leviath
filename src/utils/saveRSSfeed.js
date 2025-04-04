@@ -20,9 +20,9 @@ export function saveRSSFeed(url, channelId) {
 
         data[channelId] = url;
         fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 4), 'utf8');
-        console.log(`Flux RSS sauvegardé : ${url} associé au salon ${channelId}`);
+        console.log(`RSS Feeds Saved\n[${url}] -> ${channelId}`);
     } catch (error) {
-        console.error('Erreur lors de la sauvegarde du flux RSS :', error);
+        console.error('Erreur lors de la sauvegarde du flux RSS:', error);
     }
 }
 
@@ -33,7 +33,7 @@ export function getRSSFeeds() {
         }
         return JSON.parse(fs.readFileSync(dataFilePath, 'utf8'));
     } catch (error) {
-        console.error('Erreur lors de la lecture des flux RSS :', error);
+        console.error('Erreur lors de la lecture des flux RSS:', error);
         return {};
     }
 }

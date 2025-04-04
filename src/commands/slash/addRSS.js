@@ -40,7 +40,7 @@ export default async function addRSS(interaction) {
 
         saveRSSFeed(url, channel.id);
         return interaction.reply({
-            content: `Le flux RSS a été ajouté avec succès au salon ${channel.name}.`,
+            content: `Flux RSS ajouté ✅.`,
             flags: MessageFlags.Ephemeral,
         });
     } catch (error) {

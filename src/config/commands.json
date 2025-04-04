@@ -14,8 +14,7 @@
                     "type": 7,
                     "name": "channel",
                     "description": "Le salon où le flux RSS sera publié.",
-                    "required": true,
-                    "autocomplete": true
+                    "required": true
                 }                     
             ]
         },
