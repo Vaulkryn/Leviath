@@ -11,17 +11,19 @@ Ensuite les features seront dev selon l'intérêt.
 ---
 
 __Fonctions présentes:__
-| Commandes Slash   | Descriptif                                              |
-|:-----------------:|:--------------------------------------------------------|
-| `/addRSS`         | Ajoute le suivi d'actualités de l'URL spécifié          |
+| Commandes Slash   | Descriptif                                         |
+|:-----------------:|:---------------------------------------------------|
+| `/addRSS`         | Ajoute le suivi d'actualités de l'URL spécifié     |
+| `/clearMsg`       | Supprime tout les messages du jour                 |
 
 | Commandes Texte | Descriptif                                                    |
 |:---------------:|:--------------------------------------------------------------|
 | `rules`         | Affiche le règlement du serveur                               |
 
-| Événements               | Descriptif                                                          |
-|:------------------------:|:--------------------------------------------------------------------|
-|`DynamicVoiceChannel`     | Crée un nouveau salon vocal portant le nom de l'utilisateur         |
+| Événements               | Descriptif                                                           |
+|:------------------------:|:---------------------------------------------------------------------|
+|`DynamicVoiceChannel`     | Crée un nouveau salon vocal portant le nom de l'utilisateur          |
+|`autoRole`                | Assigne automatiquement le rôle "Membre" à l'entrée dans le serveur  |
 
 ## Ressources
 
@@ -47,14 +49,16 @@ __Fonctions présentes:__
 ---
 
 ### Release v1.10.0:
-| Version  | Objectif                                                      | État |
-|:--------:|:--------------------------------------------------------------|:----:|
-| v1.0.0   | Initial Commit                                                | ✅ |
-| v1.1.0   | Affectation auto du rôle "Membre"                             | ✅ |
-| v1.2.0   | Commande de suppression de messages                           | 🛠️ |
-| v1.3.0   | Commande d'ajout de flux RSS                                  | 🛠️ |
-| v1.4.0   | Système de logs des membres: arrivée, listing selon rôles,..  | 📝 |
-| v1.5.0   | Intégrer l'API d'un LLM de MistralAI                          | _ |
+| Version  | Objectif                                                         | État |
+|:--------:|:-----------------------------------------------------------------|:----:|
+| v1.0.0   | Initial Commit                                                   | ✅ |
+| v1.1.0   | Affectation auto du rôle "Membre"                                | ✅ |
+| v1.2.0   | Commande de suppression de messages                              | ✅ |
+| v1.3.0   | Système RSS Feeds - structure globale                            | 🛠️ |
+| v1.3.1   | Système RSS Feeds - channel autocomplete custom                  | 📝 |
+| v1.4.0   | Système de logs des membres: arrivée, listing selon rôles,..     | 📝 |
+| v1.5.0   | Affichage des permissions du Bot centralisé                      | 📝 |
+| v1.6.0   | Intégrer l'API d'un LLM de MistralAI                             | _ |
 
 
 ## License
