@@ -1,21 +1,37 @@
 {
     "LEVIATHAN": [
         {
-            "name": "add-rss",
-            "description": "Ajoute un flux RSS à un salon spécifique.",
+            "name": "game-news",
+            "description": "Gère les actus d'un jeu dans un salon spécifique.",
             "options": [
                 {
-                    "type": 3,
-                    "name": "url",
-                    "description": "L'URL du flux RSS à ajouter.",
-                    "required": true
+                    "type": 1,
+                    "name": "add",
+                    "description": "Ajoute les updates d'un jeu.",
+                    "options": [
+                        {
+                            "type": 3,
+                            "name": "name",
+                            "description": "Nom du jeu à rechercher.",
+                            "required": true,
+                            "autocomplete": true
+                        }
+                    ]
                 },
                 {
-                    "type": 7,
-                    "name": "channel",
-                    "description": "Le salon où le flux RSS sera publié.",
-                    "required": true
-                }                     
+                    "type": 1,
+                    "name": "remove",
+                    "description": "Supprime les updates d'un jeu.",
+                    "options": [
+                        {
+                            "type": 3,
+                            "name": "name",
+                            "description": "Nom du jeu à supprimer.",
+                            "required": true,
+                            "autocomplete": true
+                        }
+                    ]
+                }
             ]
         },
         {

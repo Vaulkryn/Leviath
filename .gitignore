@@ -3,3 +3,4 @@
 node_modules/
 package-lock.json
 src/config/rssFeeds.json
+src/cache/steam_apps.json
