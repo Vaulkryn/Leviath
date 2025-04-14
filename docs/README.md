@@ -11,10 +11,10 @@ Ensuite les features seront dev selon l'intérêt.
 ---
 
 __Fonctions présentes:__
-| Commandes Slash   | Descriptif                                         |
-|:-----------------:|:---------------------------------------------------|
-| `/addRSS`         | Ajoute le suivi d'actualités de l'URL spécifié     |
-| `/clearMsg`       | Supprime tout les messages du jour                 |
+| Commandes Slash   | Descriptif                                               |
+|:-----------------:|:---------------------------------------------------------|
+| `/games-manager`  | Ajoute/supprime le suivi d'actualités pour un jeu défini |
+| `/clearMsg`       | Supprime tout les messages du jour                       |
 
 | Commandes Texte | Descriptif                                                    |
 |:---------------:|:--------------------------------------------------------------|
@@ -54,12 +54,12 @@ __Fonctions présentes:__
 | v1.0.0   | Initial Commit                                                   | ✅ |
 | v1.1.0   | Affectation auto du rôle "Membre"                                | ✅ |
 | v1.2.0   | Commande de suppression de messages                              | ✅ |
-| v1.3.0   | Système RSS Feeds - structure globale                            | ✅ |
-| v1.3.1   | Système RSS Feeds - gestion des données XML                      | 🛠️ |
+| v1.3.0   | Système RSS Feeds - refonte de la structure globale              | 🛠️ |
+| v1.3.1   | Système RSS Feeds - gestion des données XML                      | 📝 |
 | v1.3.2   | Système RSS Feeds - affichage des news dans un embed             | 📝 |
 | v1.4.0   | eventHandler refactoring                                         | 📝 |
 | v1.5.0   | Système de logs des membres: arrivée, listing selon rôles,..     | 📝 |
-| v1.6.0   | Affichage des permissions du Bot centralisé                      | 📝 |
+| v1.6.0   | Centralisation du check des permissions du Bot                   | 📝 |
 | v1.7.0   | Intégrer l'API d'un LLM de MistralAI                             | _ |
 
 
