@@ -16,7 +16,7 @@ const client = new Client({
 });
 
 client.once(Events.ClientReady, () => {
-    console.log('Leviath is ready.\n');
+    console.log('Leviath[Dev] is ready.\n');
 });
 
 slashCommandHandler(client);
