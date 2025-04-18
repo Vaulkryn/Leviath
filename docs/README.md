@@ -56,8 +56,8 @@ __Fonctions présentes:__
 | v1.2.0   | Commande de suppression de messages                                   | ✅ |
 | v1.3.0   | Système RSS Feeds - refonte de la structure globale                   | ✅ |
 | v1.3.1   | Système RSS Feeds - gestion des données XML                           | ✅ |
-| v1.3.2   | Système RSS Feeds - affichage des news dans un embed                  | 🛠️ |
-| v1.3.3   | Système RSS Feeds - traduction du contenu XML                         | 📝 |
+| v1.3.2   | Système RSS Feeds - affichage des news dans un embed                  | ✅ |
+| v1.3.3   | Système RSS Feeds - traduction du contenu XML                         | 🛠️ |
 | v1.3.4   | Système RSS Feeds - ajouts de "fils" au salon du jeu pour +d'infos    | 📝 |
 | v1.3.5   | Système RSS Feeds - affichage dans un embed d'un GitHubGist           | 📝 |
 | v1.3.6   | Système RSS Feeds - logique de suppression                            | 📝 |
