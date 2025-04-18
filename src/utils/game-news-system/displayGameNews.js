@@ -177,7 +177,7 @@ export default async function displayGameNews(newsData, channel, client) {
             }
         }
 
-        console.log('Game news successfully added.\n');
+        console.log('Game news successfully added ✔️\n');
     } catch (error) {
         console.error('Error sending news:\n', error);
     }

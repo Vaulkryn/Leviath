@@ -67,7 +67,7 @@ export default async function createNewChannel(interaction) {
         const gameName = interaction.options.getString('name');
         const normalizedGameName = gameName.toLowerCase().replace(/ /g, '-').replace(/:/g, '');
         const formattedName = `❕丨${normalizedGameName}`;
-        console.log(`Adding game news ${gameName}...`);
+        console.log(`Adding game news ${gameName} 📥`);
 
         const category = interaction.guild.channels.cache.get(categoryId);
         if (!category || category.type !== ChannelType.GuildCategory) {
