@@ -28,35 +28,36 @@ export default function slashCommandHandler(client) {
             if (commandName === 'game-news') {
                 const subCommand = options.getSubcommand();
                 if (subCommand === 'add') {
-                    const game = options.getString('name');
-                    if (game == '...') {
+                    const gameName = options.getString('name');
+                    if (gameName == '...') {
                         await interaction.reply({ 
                             content: `> Mdr putain t'es con 😵`, 
                             flags: MessageFlags.Ephemeral 
                         });
                         return;
                     }
-                    const gameURL = await generateGameURL(game);
+                    const gameURL = await generateGameURL(gameName);
                     if (!gameURL) {
                         await interaction.reply({ 
-                            content: `> ⚠️ **${game}** n'existe pas dans la base de données Steam.`, 
+                            content: `> ⚠️ **${gameName}** n'existe pas dans la base de données Steam.`, 
                             flags: MessageFlags.Ephemeral 
                         });
                         return;
                     }
-                    console.log(gameURL);
-                    await gameNewsHandler(interaction, 'add', gameURL);
+
+                    await gameNewsHandler(interaction, 'add', gameURL, gameName);
 
                 } else if (subCommand === 'remove') {
-                    const game = options.getString('name');
-                    if (!game) {
+                    const gameName = options.getString('name');
+                    if (!gameName) {
                         await interaction.reply({ 
-                            content: `Veuillez spécifier un jeu.`, 
+                            content: `> Veuillez spécifier un jeu.`, 
                             flags: MessageFlags.Ephemeral 
                         });
                         return;
                     }
-                    await gameNewsHandler(interaction, 'remove', game);
+                    
+                    await gameNewsHandler(interaction, 'remove', gameName);
                 }
             }
             if (commandName === 'clear-msg') {
