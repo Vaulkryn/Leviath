@@ -1,6 +1,7 @@
 import { MessageFlags } from 'discord.js';
 import createNewChannel from '../../utils/game-news-system/createNewChannel.js';
 import manageRSSfeed from '../../utils/game-news-system/manageRSSfeed.js';
+import newsTranslator from '../../utils/game-news-system/newsTranslator.js';
 import displayGameNews from '../../utils/game-news-system/displayGameNews.js';
 
 export default async function gameNewsHandler(interaction, action, gameURL, gameName) {
@@ -27,9 +28,9 @@ export default async function gameNewsHandler(interaction, action, gameURL, game
 
             const channelId = newChannel.id;
             const newsData = await manageRSSfeed(gameURL, channelId);
-            //const translatedNewsData = await newsTranslator(newsData);
+            const translatedNewsData = await newsTranslator(newsData);
 
-            await displayGameNews(newsData, channelId, interaction.client);
+            await displayGameNews(translatedNewsData, channelId, interaction.client);
 
             await interaction.editReply({
                 content: `> Updates Steam ajoutées pour **${gameName}**.
